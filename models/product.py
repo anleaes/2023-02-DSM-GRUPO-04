@@ -3,13 +3,13 @@ from models.category import Category
 
 class Product:
     def __init__(
-            self,
-            *,
-            name: str,
-            description: str,
-            date_fabrication: str,
-            is_active: bool,
-            category: Category,
+        self,
+        *,
+        name: str,
+        description: str,
+        date_fabrication: str,
+        is_active: bool,
+        category: Category,
     ):
         self.name = name
         self.description = description
