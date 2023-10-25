@@ -47,7 +47,7 @@ def main():
     client=cliente_bruna
   )
 
-  ordem = OrderItem(
+  ordem_item = OrderItem(
     quantity=4,
     unitary_price=100.0,
     order=ordem,
