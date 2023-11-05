@@ -12,3 +12,4 @@ __pycache__/
 /orders/__pycache__/*
 /orders/migrations/*
 env/
+.env
