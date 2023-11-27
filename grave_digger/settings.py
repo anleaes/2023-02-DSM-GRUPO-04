@@ -42,11 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'categories.apps.CategoriesConfig', 
-    'socialnetworks.apps.SocialnetworksConfig',
-    'products.apps.ProductsConfig',
-    'clients.apps.ClientsConfig',
-    'orders.apps.OrdersConfig',
 
 ]
 
