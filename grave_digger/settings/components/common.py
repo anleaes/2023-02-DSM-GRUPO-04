@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rarities.apps.RaritiesConfig',
+    'effects.apps.EffectsConfig'
 ]
 
 MIDDLEWARE = [
