@@ -4,3 +4,6 @@ from .serializer import EffectSerializer
 # Create your views here.
 
 
+class EffectViewSet (viewsets.ModelViewSet):
+    queryset = Effect.objects.all()
+    serializer_class = EffectSerializer
