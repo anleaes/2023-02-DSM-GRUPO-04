@@ -1,4 +1,5 @@
 from django.db import models
+from apps.itemcategories.models import ItemCategory
 
 from apps.rarities.models import Rarity
 # Create your models here.
@@ -6,7 +7,7 @@ from apps.rarities.models import Rarity
 class Item(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
-    category = models.ForeignKey()
+    category = models.ForeignKey(ItemCategory, on_delete=models.SET_NULL, null=True)
     rarity = models.ForeignKey(Rarity, on_delete=models.SET_NULL, null=True)
     value = models.FloatField()
     weight = models.FloatField()
