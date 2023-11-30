@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rarities.apps.RaritiesConfig',
     'effects.apps.EffectsConfig',
+    'itemcategories.apps.ItemcategoriesConfig',
     'magics.apps.MagicsConfig',
 ]
 
