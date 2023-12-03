@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'items.apps.ItemsConfig',
     'inventories.apps.InventoriesConfig',
     'characters.apps.CharactersConfig',
+    'players.apps.PlayersConfig'
 ]
 
 MIDDLEWARE = [
