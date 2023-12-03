@@ -1,5 +1,5 @@
 from django.db import models
-
+from effects.models import Effect
 # Create your models here.
 
 class Magic(models.Model):
@@ -9,6 +9,7 @@ class Magic(models.Model):
     power = models.PositiveIntegerField()
     mana_cost = models.PositiveIntegerField() 
     duration = models.PositiveIntegerField() 
+    effects = models.ManyToManyField(Effect, blank=True)
 
     def __str__(self) -> str:
         return self.name
