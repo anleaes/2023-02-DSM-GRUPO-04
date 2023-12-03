@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('effects.urls', namespace='effects')),
     path('', include('itemcategories.urls', namespace='itemcategories')),
     path('', include('magics.urls', namespace='magics')),
+    path('', include('items.urls', namespace='items')),
 ]
