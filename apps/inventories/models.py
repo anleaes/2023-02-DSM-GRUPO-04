@@ -4,8 +4,8 @@ from items.models import Item
 # Create your models here.
 
 class Inventory(models.Model):
-    size = models.IntegerField(default=10)
-    money = models.FloatField()
+    size = models.IntegerField("Tamanho", default=10)
+    money = models.FloatField("Dinheiro")
     owner = models.OneToOneField(Character)
 
     def __str__(self):
@@ -19,7 +19,7 @@ class Inventory(models.Model):
 class InventorySlot(models.Model):
     item = models.ForeignKey(Item)
     inventory = models.ForeignKey(Inventory)
-    quantity = models.IntegerField(default=1)
+    quantity = models.IntegerField("Quantidade", default=1)
 
     def __str__(self):
         return f"{self.inventory} - {self.item} - {self.quantity}"

@@ -3,9 +3,9 @@ from characters.models import Character
 # Create your models here.
 
 class Player(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=100)
-    email = models.EmailField()
+    first_name = models.CharField("Primeiro nome", max_length=50)
+    last_name = models.CharField("Último nome", max_length=100)
+    email = models.EmailField("E-mail")
     character = models.OneToOneField(Character)
 
     def __str__(self):
