@@ -1,7 +1,7 @@
 from django.db import models
-from apps.itemcategories.models import ItemCategory
+from rarities.models import Rarity
+from itemcategories.models import ItemCategory
 
-from apps.rarities.models import Rarity
 # Create your models here.
 
 class Item(models.Model):

@@ -1,6 +1,7 @@
 from django.apps import AppConfig
 
 
-class RarityConfig(AppConfig):
+class RaritiesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'rarity'
+    name = 'rarities'
+    verbose_name = "Rarities"
