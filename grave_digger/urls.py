@@ -25,5 +25,6 @@ urlpatterns = [
     path('magics', include('magics.urls', namespace='magics')),
     path('items', include('items.urls', namespace='items')),
     path('characters', include('characters.urls', namespace='characters')),
-    path('inventories', include('inventories.urls', namespace='inventories'))
+    path('inventories', include('inventories.urls', namespace='inventories')),
+    path('players', include('players.urls', namespace="player"))
 ]
