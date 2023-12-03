@@ -4,8 +4,6 @@ from rest_framework import routers
 
 app_name = 'items'
 
-
-
 router = routers.DefaultRouter()
 router.register('items', views.ItemViewSet, basename='items')
 
