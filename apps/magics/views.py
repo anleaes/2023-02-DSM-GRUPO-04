@@ -1,6 +1,6 @@
 from .models import Magic
 from rest_framework import viewsets
-from .serializer import MagicSerializer
+from .serializers import MagicSerializer
 # Create your views here.
 
 
