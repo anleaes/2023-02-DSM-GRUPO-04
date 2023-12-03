@@ -19,9 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('rarities.urls', namespace='rarities')),
-    path('', include('effects.urls', namespace='effects')),
-    path('', include('itemcategories.urls', namespace='itemcategories')),
-    path('', include('magics.urls', namespace='magics')),
-    path('', include('items.urls', namespace='items')),
+    path('rarities', include('rarities.urls', namespace='rarities')),
+    path('effects', include('effects.urls', namespace='effects')),
+    path('itemcategories', include('itemcategories.urls', namespace='itemcategories')),
+    path('magics', include('magics.urls', namespace='magics')),
+    path('items', include('items.urls', namespace='items')),
 ]

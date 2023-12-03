@@ -11,12 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 import sys
-from pathlib import Path
+from pathlib import PurePath
 from grave_digger.settings.components import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = PurePath(__file__).parent.parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -41,7 +40,7 @@ INSTALLED_APPS = [
     'effects.apps.EffectsConfig',
     'itemcategories.apps.ItemcategoriesConfig',
     'magics.apps.MagicsConfig',
-    'items.apps.ItemsConfig',
+    'items.apps.ItemsConfig'
 ]
 
 MIDDLEWARE = [
