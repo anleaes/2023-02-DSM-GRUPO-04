@@ -8,4 +8,10 @@ class Character(models.Model):
     name = models.CharField(max_length=100)
     level = models.IntegerField()
     magics = models.ManyToManyField(Magic)
-    inventory = models.ForeignKey()
+
+    def __str__(self):
+        return f"{self.name} - {self.level}"
+    
+    class Meta:
+        verbose_name_plural = 'Characters'
+        ordering = ['name']
