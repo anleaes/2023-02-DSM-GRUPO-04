@@ -4,3 +4,6 @@ from .models import Character
 from .serializer import CharacterSerializer
 # Create your views here.
 
+class CharacterViewSet(viewsets.ModelViewSet):
+    queryset = Character.objects.all()
+    serializer_class = CharacterSerializer
