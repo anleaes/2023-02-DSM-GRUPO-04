@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'effects.apps.EffectsConfig',
     'itemcategories.apps.ItemcategoriesConfig',
     'magics.apps.MagicsConfig',
-    'items.apps.ItemsConfig'
+    'items.apps.ItemsConfig',
+    'inventories.apps.InventoriesConfig'
 ]
 
 MIDDLEWARE = [
