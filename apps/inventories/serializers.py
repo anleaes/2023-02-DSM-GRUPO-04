@@ -3,10 +3,10 @@ from .models import Inventory, InventorySlot
 
 class InventorySerializer(serializers.ModelSerializer):
     class Meta:
-        queryset = Inventory.objects.all()
+        model = Inventory
         fields = "__all__"
 
 class InventorySlotSerializer(serializers.ModelSerializer):
     class Meta:
-        queryset = InventorySlot.objects.all()
+        model = InventorySlot
         fields = "__all__"
