@@ -24,4 +24,6 @@ urlpatterns = [
     path('itemcategories', include('itemcategories.urls', namespace='itemcategories')),
     path('magics', include('magics.urls', namespace='magics')),
     path('items', include('items.urls', namespace='items')),
+    path('characters', include('characters.urls', namespace='characters')),
+    path('inventories', include('inventories.urls', namespace='inventories'))
 ]
