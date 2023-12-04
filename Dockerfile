@@ -32,4 +32,4 @@ ENV DJANGO_ENV=$DJANGO_ENV
 RUN DJANGO_ENV=$DJANGO_ENV python3 manage.py migrate
 RUN DJANGO_ENV=$DJANGO_ENV COLLECT_STATIC=1 python manage.py collectstatic --noinput
 
-CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 0 aigo.wsgi:application
+CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 0 grave_digger.wsgi:application

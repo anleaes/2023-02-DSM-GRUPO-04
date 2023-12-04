@@ -19,12 +19,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rarities', include('rarities.urls', namespace='rarities')),
-    path('effects', include('effects.urls', namespace='effects')),
-    path('itemcategories', include('itemcategories.urls', namespace='itemcategories')),
-    path('magics', include('magics.urls', namespace='magics')),
-    path('items', include('items.urls', namespace='items')),
-    path('characters', include('characters.urls', namespace='characters')),
-    path('inventories', include('inventories.urls', namespace='inventories')),
-    path('players', include('players.urls', namespace="player"))
+    path('rarities/', include('rarities.urls', namespace='rarities')),
+    path('effects/', include('effects.urls', namespace='effects')),
+    path('itemcategories/', include('itemcategories.urls', namespace='itemcategories')),
+    path('magics/', include('magics.urls', namespace='magics')),
+    path('items/', include('items.urls', namespace='items')),
+    path('characters/', include('characters.urls', namespace='characters')),
+    path('inventories/', include('inventories.urls', namespace='inventories')),
+    path('players/', include('players.urls', namespace="player"))
 ]
