@@ -7,8 +7,8 @@ from itemcategories.models import ItemCategory
 class Item(models.Model):
     name = models.CharField("Nome", max_length=50)
     description = models.TextField("Descrição")
-    category = models.ForeignKey(ItemCategory, on_delete=models.SET_NULL, null=True)
-    rarity = models.ForeignKey(Rarity, on_delete=models.SET_NULL, null=True)
+    category = models.ForeignKey(ItemCategory, on_delete=models.DO_NOTHING)
+    rarity = models.ForeignKey(Rarity, on_delete=models.DO_NOTHING)
     value = models.FloatField("Valor")
     weight = models.FloatField("Peso")
 
